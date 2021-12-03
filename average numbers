@@ -1,0 +1,31 @@
+import java.text.DecimalFormat;
+class Calculator {
+
+	// Implement your code here
+	public int num1;
+	public int num2;
+	public int num3;
+	public float num4;
+	public float findAverage(Calculator calculator)
+	{
+	    num1=10;
+	    num2=20;
+	    num3=30;
+	   num4=num1+num2+num3;
+	   
+	    return num4/3;
+	}
+	
+}
+
+class Tester {
+	private static final DecimalFormat df = new DecimalFormat("0.00");
+	public static void main(String args[]) {
+		Calculator calculator = new Calculator();
+		// Invoke the method findAverage of the Calculator class and display the average
+	
+		float result=calculator.findAverage(calculator);
+	System.out.println(df.format(result));
+		
+	}
+}
