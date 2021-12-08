@@ -1,0 +1,26 @@
+class Tester {
+    public static String reverseEachWord(String str){
+	    String org=str;
+	   
+	   String[] words=str.split(" ");
+	   int i,j;
+	   String reversestr= "";
+	   for(i=0;i<words.length;i++)
+	   {
+	       String word=words[i];
+	       String revword="";
+	       for(j=word.length()-1;j>=0;j--)
+	       {
+	           revword=revword+word.charAt(j);
+	       }
+	       reversestr=reversestr+revword+" ";
+	   }
+	   return reversestr;
+	   
+	}
+	
+	public static void main(String args[]){
+	    String str = "This is a String";
+	    System.out.println(reverseEachWord(str));
+	}
+}
