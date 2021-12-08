@@ -1,0 +1,12 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+		 String str="hel&&otr**upthi";
+		 
+		 String spstring=str.replaceAll("[a-zA-Z0-9]","");
+		  String plainstring=str.replaceAll("[^a-zA-Z0-9]","");
+		    String res=plainstring+spstring;
+		    System.out.println(res);
+	}
+}
